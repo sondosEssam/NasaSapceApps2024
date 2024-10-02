@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing</title>
+  </head>
+  <body>
+      <canvas class="webgl"></canvas>
+    <nav>
+      <p>Orrery</p>
+      <ul>
+        <li><a href="#">Todays's Card</a></li>
+        <li><a href="#">Mini Game</a></li>
+        <li><a href="#">Library</a></li>
+      </ul>
+    </nav>
+    <button id="explore-btn" class="expolore">Explore</button>
+    <button id="toggle-menu-btn" class="toggle-menu-btn">   </button>
+    <div id="layer-toggle-menu" class="layer-menu">
+      <h4>Layer Controls</h4>
+      <label>
+        <input type="checkbox" id="toggle-orbits" checked> Show/Hide Orbits
+      </label><br>
+      <label>
+        <input type="checkbox" id="toggle-planets" checked> Show/Hide Planets
+      </label><br>
+      <label>
+        <input type="checkbox" id="toggle-planets" checked> Show/Hide PHAs&NEOs
+      </label><br>
+      <label>
+        <input type="checkbox" id="toggle-text" checked> Show/Hide Labels
+      </label>
+    </div>
+    <script type="module" src="/main.js"></script>
+
+  </body>
+</html>
