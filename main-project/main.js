@@ -4,6 +4,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'; //ani
 import gsap from 'gsap';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import { CSS2DRenderer, CSS2DObject } from 'three/examples/jsm/renderers/CSS2DRenderer.js';
+import TodaysCard from './todaysCard.js';
 //sizes
 const sizes = {
     width: window.innerWidth,
@@ -34,6 +35,7 @@ loader.load('./assests/Sun.glb', function(gltf) {
 });
 //-------------------planets-------------------
 //setting vars
+const todaysCard = new TodaysCard();
 const planetNames = ['mercury', 'venus', 'earth', 'mars', 'jupiter', 'saturn', 'uranus', 'neptune'];
 const planetsData = {};
 const planetObjects = {};

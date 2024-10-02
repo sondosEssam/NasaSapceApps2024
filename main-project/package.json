@@ -12,7 +12,9 @@
     "vite": "^5.4.1"
   },
   "dependencies": {
+    "@google/generative-ai": "^0.20.0",
     "gsap": "^3.12.5",
-    "three": "^0.169.0"
+    "three": "^0.169.0",
+    "vite-plugin-node-polyfills": "^0.22.0"
   }
 }
