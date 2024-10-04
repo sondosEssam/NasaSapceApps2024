@@ -1,0 +1,185 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body, html {
+ overflow-x: hidden;
+ font-family: 'Rubik', sans-serif;
+
+}
+.webgl{
+  top:0;
+  left:0;
+  position: absolute;
+  z-index: 1;
+}
+nav{
+  margin: 20px;
+  margin-right: 50px;
+  color: white;
+  z-index: 2;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+}
+nav p{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 30px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: bold;
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  gap: 4rem;
+}
+nav ul li{
+  margin: 10px;
+  border: 1px solid white;
+  background-color: #000000;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.expolore{
+  border: 1px solid white;
+  font-size: 1.5rem;
+  position: absolute;
+  z-index: 2;
+  border-radius: 10px;
+  padding: 10px 30px;
+  background-color: #000000;
+  color: white;
+  top: 83%;
+  left: 50%;
+  cursor: pointer;
+  transition: 0.5s;
+  transform: translate(-50%, -50%);
+}
+.expolore:hover{
+  background-color: white;
+  color: black;
+}
+nav ul li:hover {
+  color: black;
+  background-color: white;
+ 
+}
+
+nav ul a:hover{
+  color: black;
+} 
+/* Toggle Menu Button */
+.toggle-menu-btn {
+  position: fixed;
+  top: 40%;
+  right: 20px;
+  z-index: 3;
+  background-color: #000;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.toggle-menu-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Layer Menu Styles */
+.layer-menu {
+  position: fixed;
+  top: 45%;
+  right: -250px; /* Initially hidden */
+  width: 250px;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+  border-radius: 10px;
+  transition: right 0.3s ease-in-out;
+}
+
+.layer-menu h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.layer-menu label {
+  font-size: 14px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #1a1a1a;
+  padding: 2rem;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 600px;
+  position: relative;
+  font-family: 'Rubik', sans-serif;
+  color: white;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.card-content {
+  margin-top: 1rem;
+}
+
+.loading-spinner {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgba(255,255,255,.3);
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.fact-text {
+  line-height: 1.6;
+  margin-top: 1rem;
+}
