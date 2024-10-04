@@ -7,6 +7,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Landing</title>
   </head>
   <body>
@@ -14,23 +15,23 @@
     <nav>
       <p>Orrery</p>
       <ul>
-        <li><a href="#">Todays's Card</a></li>
-        <li><a href="#">Mini Game</a></li>
+        <li><a href="todaysCard">Todays's Card</a></li>
+        <li><a href="game">Mini Game</a></li>
         <li><a href="#">Library</a></li>
       </ul>
     </nav>
     <button id="explore-btn" class="expolore">Explore</button>
-    <button id="toggle-menu-btn" class="toggle-menu-btn">   </button>
+    <button id="toggle-menu-btn" class="toggle-menu-btn"><i class="fas fa-th-large"></i></button>
     <div id="layer-toggle-menu" class="layer-menu">
       <h4>Layer Controls</h4>
       <label>
-        <input type="checkbox" id="toggle-orbits" checked> Show/Hide Orbits
+        <input type="checkbox" id="toggle-orbits" > Show/Hide Orbits
       </label><br>
       <label>
         <input type="checkbox" id="toggle-planets" checked> Show/Hide Planets
       </label><br>
       <label>
-        <input type="checkbox" id="toggle-planets" checked> Show/Hide PHAs&NEOs
+        <input type="checkbox" id="toggle-bodies" checked> Show/Hide PHAs&NEOs
       </label><br>
       <label>
         <input type="checkbox" id="toggle-text" checked> Show/Hide Labels
