@@ -369,9 +369,7 @@ console.log("-----------------------------------------------------------------")
             showPlanetCard(clickedBody);
         }
             }
-        else{
-            hidePlanetCard(); // Hide the card if no planet is clicked
-        }
+
     
 }
 function toScreenPosition(obj) {
@@ -414,6 +412,8 @@ function showPlanetCard(planet, x, y) {
 // Function to hide the card
 function hidePlanetCard() {
     const infoCard = document.querySelector('.planet-card');  // Select the card div from the HTML
+    const btn = document.querySelector('.close-btn');
+    btn.style.display = 'none';  // Hide the close button
     infoCard.style.display = 'none';  // Hide the card
     currentPlanet = null;  // Clear the currently selected planet
 }
@@ -460,7 +460,21 @@ function zoomToSun(sun) {
         }
     });
 }
+// Search input and button elements
+const searchInput = document.getElementById('search-input');
+const searchButton = document.getElementById('search-button');
 
+// Search functionality when clicking the search icon
+searchButton.addEventListener('click', () => {
+    const searchTerm = searchInput.value.toLowerCase();
+
+    // If the search term matches a planet, zoom to that planet
+    if (planetObjects[searchTerm]) {
+        zoomToPlanet(planetObjects[searchTerm]);
+    } else {
+        alert("Planet not found! Please enter a valid planet name.");
+    }
+});
 //
 function zoomToPlanet(planet) {
     console.log('Zooming to planet:', planet);

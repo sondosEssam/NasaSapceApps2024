@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Shooter</title>
+    <link rel="stylesheet" href="model_style.css">
+</head>
+<body>
+    <button class="back-button"><a href="index">Return</a></button>
+    <canvas id="gameCanvas"></canvas>
+
+    <div id="planetInfoModal" class="modal">
+        <div class="modal-content">
+            <h2 id="planetName"></h2>
+            <p id="planetInfo"></p>
+            <button class="btn" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <div id="messageModal" class="modal">
+        <div class="modal-content">
+            <h2 id="messageText"></h2>
+            <button class="btn restart-btn" onclick="restartGame()">Play Again</button>
+            <button class="btn" ><a href="index">Close</a></button>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
