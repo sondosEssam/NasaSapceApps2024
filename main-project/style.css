@@ -210,3 +210,15 @@ nav ul a:hover{
   display: none;
   z-index: 3;   
 }
+
+li input{
+  background-color: #000000;
+  border: 1px solid none;
+  color:white;
+}
+li button{
+  background-color: #000000;
+  border: 1px solid none;
+  color: white;
+  cursor: pointer;
+}
