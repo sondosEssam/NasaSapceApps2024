@@ -70,6 +70,7 @@ or you can run this file when you clone the repo:
 ## References
 A lot of NASA tools were used to make this app:
 - [Small-Body Database Query](https://ssd.jpl.nasa.gov/tools/sbdb_query.html)
+
 - [Github - nasa/mission-viz](https://github.com/nasa/mission-viz)
 - [Web Based Space Mission Visualization System](https://nasa.github.io/mission-viz/X3Dom/20150611_WebBasedMissionVisualizationSystem.pdf)
 - [Elliptical Orbit Simulator](https://nasa.github.io/mission-viz/RMarkdown/Elliptical_Orbit_Design.html)
