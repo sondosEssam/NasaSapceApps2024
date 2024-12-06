@@ -10,7 +10,7 @@ class TodaysCard {
     this.CACHE_DURATION = 1000 * 60 * 60; // 1 hour cache
     
     // Initialize Gemini
-    this.genAI = new GoogleGenerativeAI('AIzaSyBu2db11cF-XkV7QbRDsfgqyXqpQTwDe_M');
+    this.genAI = new GoogleGenerativeAI('AIzaSyDEYhx6AQM_dtdjR3PMJJzRfAzf0qx8Tvc');
     this.model = this.genAI.getGenerativeModel({ 
       model: "gemini-1.5-flash",
       generationConfig: {
