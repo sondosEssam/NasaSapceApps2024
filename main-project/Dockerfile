@@ -23,7 +23,7 @@ FROM nginx:alpine as production-stage
 COPY --from=build-stage /app/dist /usr/share/nginx/html
 
 # Expose the port the app will run on
-EXPOSE 80
+EXPOSE 8080
 
 # Start Nginx to serve the app
 CMD ["nginx", "-g", "daemon off;"]
